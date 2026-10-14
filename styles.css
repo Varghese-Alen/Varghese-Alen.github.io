@@ -410,6 +410,12 @@ body.is-home .topbar .bar{max-width:none;width:min(800px,calc(100% - 2 * var(--g
 }
 /* wider column so the bigger picture and the heading sit side by side */
 #top .story,#top .what,#top .latest3{max-width:800px}
+/* =========================================================
+   Hero workbench scene: styles
+   Needs the colour variables --bg, --ink and --rule-2 from :root
+   (already defined in the site). Paste this whole file in place of
+   the old "hero illustration" block in your stylesheet.
+   ========================================================= */
 /* hero illustration (vector, drawn on the page background) */
 .scene svg{display:block;width:100%;height:auto;overflow:visible}
 .scene svg *{vector-effect:non-scaling-stroke}
@@ -450,15 +456,50 @@ body.is-home .topbar .bar{max-width:none;width:min(800px,calc(100% - 2 * var(--g
   .scene .led{animation:scled 2.4s ease-in-out infinite}
   .scene .steam{animation:scsteam 3s ease-out infinite}
 }
-/* home: the hero is one vector scene standing on the shared hairline; the heading sits in its empty corner */
-#top .story{display:block}
+.scene .pipe{stroke:var(--ink);stroke-width:3.6px;stroke-linecap:round;stroke-linejoin:round;opacity:.85}
+.scene .pipe2{stroke:var(--bg);stroke-width:1.6px;stroke-linecap:round;stroke-linejoin:round}
+.scene .flow{stroke:rgba(231,212,187,.85);stroke-width:1px;stroke-dasharray:1.5 3.5;stroke-linecap:round}
+.scene .bub{fill:rgba(231,212,187,.75);opacity:0}
+.scene .lk{fill:#2B2A25;stroke:var(--ink);stroke-width:1.6px;stroke-linejoin:round}
+.scene .lkp{fill:rgba(231,212,187,.2);stroke:var(--ink);stroke-width:1px}
+.scene .rod{stroke:var(--ink);stroke-width:2.4px;stroke-linecap:round}
+.scene .hose{stroke:var(--ink);stroke-width:1.5px;opacity:.6;stroke-linecap:round}
+.scene .sheen{stroke:rgba(231,212,187,.2);stroke-width:2px;stroke-linecap:round}
+.scene .tb1{stroke:var(--ink);stroke-width:2.8px;stroke-linecap:round;stroke-linejoin:round}
+.scene .tb2{stroke:#3B3933;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round}
+.scene .cd{font-family:'DejaVu Sans Mono','Geist Mono',Menlo,Consolas,monospace}
+.scene .key{fill:rgba(231,212,187,.3);stroke:var(--ink);stroke-width:.6px}
+.scene .ring2{stroke:var(--ink);stroke-width:1.2px;opacity:.85}
+.scene .trunk{stroke:var(--ink);stroke-width:6.4px;stroke-linecap:round}
+.scene .trunk2{stroke:#6E6350;stroke-width:4px;stroke-linecap:round}
+.scene .br1{stroke:var(--ink);stroke-width:4.8px;stroke-linecap:round}
+.scene .br2{stroke:#6E6350;stroke-width:2.6px;stroke-linecap:round}
+.scene .tw1{stroke:var(--ink);stroke-width:3.4px;stroke-linecap:round}
+.scene .tw2{stroke:#6E6350;stroke-width:1.6px;stroke-linecap:round}
+.scene .blink{fill:var(--ink)}
+.scene .lf{stroke:var(--ink);stroke-width:1px}
+.scene .jh{fill:rgba(231,212,187,.35)}
+.scene .trk{fill:#5E5446}
+.scene .lf2{stroke:var(--ink);stroke-width:.7px;stroke-opacity:.8}
+.scene .lkc{stroke:var(--ink);stroke-width:1px;opacity:.45;stroke-linecap:round}
+.scene .cab{stroke:var(--ink);stroke-width:1px;opacity:.55;stroke-linecap:round}
+@media (prefers-reduced-motion:no-preference){
+  @keyframes scflow{to{stroke-dashoffset:-10}}
+  @keyframes scbub{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-32px);opacity:0}}
+  .scene .flow{animation:scflow .9s linear infinite}
+  .scene .bub{animation:scbub 2.8s ease-in infinite}
+  @keyframes scblink{0%,100%{opacity:1}45%{opacity:.15}55%{opacity:1}}
+  .scene .blink{animation:scblink 1.6s steps(2,jump-none) infinite}
+}
+
+/* hero layout: heading sits in the empty corner under the desk */
 #top .hero{position:relative;display:block;border-bottom:1px solid var(--rule-2)}
 #top .scene{width:100%;margin:0}
 #top .hero h1{position:absolute;left:0;bottom:14px;margin:0;z-index:2;font-size:clamp(44px,5.4vw,60px);line-height:1}
-#top .story .copy{margin:44px 0 0;max-width:640px}
 @media (max-width:640px){
   #top .hero h1{position:static;margin:0 0 18px}
 }
+
 /* the menu can never be covered or clipped */
 .topbar{overflow:visible;z-index:20}
 .topbar nav,.topbar nav a{position:relative;z-index:21}
