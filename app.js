@@ -25,6 +25,7 @@
     show(0);
   });
   var REL=[
+    {k:'2026-10-19',d:'19 Oct 2026',t:'Sheet metal PC case',kind:'Log',h:'#/project/sheet-metal-pc-case'},
     {k:'2026-10-12',d:'12 Oct 2026',t:'Automatic rubber-tapping machine',kind:'Log',h:'#/project/rubber-tapping-machine'}
   ];
   (function(){

@@ -74,6 +74,11 @@
     <span class="cnt" id="pcount">1 project</span>
   </div>
   <div class="pgrid">
+      <a class="pc" href="#/project/sheet-metal-pc-case" data-tags="prod">
+        <span class="plate"><img src="assets/card-sheet-metal-pc-case.webp" alt="Sheet metal PC case"></span>
+        <span class="pc-top"><time datetime="2026-10-19">19 Oct 2026</time></span>
+        <span class="pc-t">Sheet metal PC case</span>
+      </a>
       <a class="pc" href="#/project/rubber-tapping-machine" data-tags="eng">
         <span class="plate"><img src="assets/card-rubber-tapping-machine.webp" alt="Automatic rubber-tapping machine"></span>
         <span class="pc-top"><time datetime="2026-10-12">12 Oct 2026</time></span>
@@ -121,6 +126,135 @@
   </section>
 </main>
 
+
+<article id="art-sheet-metal-pc-case" class="wrap art" data-slug="sheet-metal-pc-case">
+  <a class="back" href="#/projects">← All projects</a>
+
+  <div class="grid art-head">
+    <h1>SHEET METAL PC CASE</h1>
+    <p class="lede">A computer case you can cut from flat metal sheets, bend, and screw together yourself. Free to download, adapt and prototype.</p>
+    <div class="meta">
+      <div><b>Status</b>Unprototyped design. Digital checks completed; physical testing needed.</div>
+      <div><b>What I did</b>3D CAD design, sheet metal layout, build guide and BOMs</div>
+      <div><b>Download</b><a class="ul" href="downloads/M3-Capsule-DIY-kit.zip">Prototype kit (ZIP, 11.4&nbsp;MB)</a></div>
+    </div>
+  </div>
+
+  <div class="grid art-body">
+    <aside class="spec">
+      <dl>
+        <div><dt>Rough size</dt><dd>30.2 × 41.0 × 52.0&nbsp;cm</dd></div>
+        <div><dt>Motherboard</dt><dd>ATX, mATX, Mini-ITX</dd></div>
+        <div><dt>Parts</dt><dd>19 main sheet pieces</dd></div>
+        <div><dt>Materials</dt><dd>Aluminium &amp; mild steel</dd></div>
+        <div><dt>Tested</dt><dd>Digital checks only</dd></div>
+        <div><dt>License</dt><dd>CERN-OHL-P-2.0</dd></div>
+      </dl>
+      <ul class="toc">
+        <li><a href="#pcc1">1 What is it?</a></li>
+        <li><a href="#pcc2">2 Why I made it</a></li>
+        <li><a href="#pcc3">3 The look</a></li>
+        <li><a href="#pcc4">4 How it’s made</a></li>
+        <li><a href="#pcc5">5 What fits inside</a></li>
+        <li><a href="#pcc6">6 What you get in the download</a></li>
+        <li><a href="#pcc7">7 Make it your own</a></li>
+        <li><a href="#pcc8">8 License</a></li>
+      </ul>
+    </aside>
+
+    <div class="prose">
+      <blockquote style="border-left:2px solid var(--ink-2);padding-left:16px;margin:24px 0"><p><b>Unprototyped design.</b> The digital design has been checked, but no physical case has been validated. Fabrication, component fit, electrical safety, bonding, cooling and load tests still need to be completed before a build is treated as ready for use.</p></blockquote>
+
+      <figure class="fig plate"><img src="assets/pc-case-01-cover.webp" alt="The sheet metal PC case" loading="lazy"></figure>
+      <p class="cap"><b>Fig. 1</b><span>Sheet Metal PC Case. CAD rendering, not a built case; finishes are illustrative.</span></p>
+
+      <h2 id="pcc1"><i>1</i>What is it?</h2>
+      <p>It’s a box for your computer. That’s honestly all a PC case is. Something that holds the parts together, makes room for cooling, and sits nicely on your desk while doing it.</p>
+      <p>This one’s custom chassis parts all start as flat sheet metal. They get cut, a few edges get folded, and then everything is held together with ordinary fasteners. No welding and no custom moulded chassis parts.</p>
+      <p>Switches, connectors and cables are purchased separately. The gasket and protective pads add the necessary non-metal parts; they aren’t included in the main sheet-metal count.</p>
+
+      <h2 id="pcc2"><i>2</i>Why I made it</h2>
+      <p>I’ve always loved <a class="ul" target="_blank" rel="noopener" href="https://teenage.engineering/products/computer-1">Teenage Engineering’s little computer case</a>. It’s so simple. A few folded plates of metal, and somehow it looks better than most cases covered in glass and RGB. I kept staring at it and wondering how far I could take that idea on my own.</p>
+      <p>I also wanted to make something I could just give away. Most of what I design ends up on a client’s drive and nobody ever sees it again. This one is different. If you like it, download it, adapt it, prototype it. It’s here to be used.</p>
+
+      <h2 id="pcc3"><i>3</i>The look</h2>
+      <p>A plain metal box gets boring very quickly, so I added a few small details that give it some character.</p>
+
+      <figure class="fig plate"><img src="assets/pc-case-02-side-view.webp" alt="Side view showing the feet and handle" loading="lazy"></figure>
+      <p class="cap"><b>Fig. 2</b><span>The side plate carries the feet, handle opening and lower step in one piece.</span></p>
+
+      <p><b>The sides.</b> Each side plate works a bit like a sled. Its outline continues down into two feet and up above the body into a handle opening. So the case stands slightly off the desk without needing a separate set of legs. The handles are still <b>unrated: empty-case handling only until load-tested</b>.</p>
+
+      <figure class="fig plate"><img src="assets/pc-case-03-capsule-vent.webp" alt="Close up of the round vent holes" loading="lazy"></figure>
+      <p class="cap"><b>Fig. 3</b><span>Side-sheet detail with studio backlighting. The holes are round, not hexagonal; this is not built-in lighting.</span></p>
+
+      <p><b>The vent.</b> Air needs a way in and out. Each side has 546 round holes, 3.5 mm in diameter, on a staggered hexagonal grid. Solid bands trace the capsule shape. It lets the fans breathe without looking like a random mesh; cooling performance still needs testing.</p>
+      <p><b>The step line.</b> A small step runs along the lower body. It’s a tiny thing, but without it the case looked flat and unfinished. With it, the box suddenly feels designed. It’s a real formed offset in the metal, not an extra decorative strip.</p>
+
+      <figure class="fig plate"><img src="assets/pc-case-04-front-io.webp" alt="Front panel with power button and ports" loading="lazy"></figure>
+      <p class="cap"><b>Fig. 4</b><span>Fascia detail, with the surrounding shell and concealed carrier omitted. Purchased connector geometry is simplified in the CAD.</span></p>
+
+      <p><b>The front.</b> All the stuff you actually reach for lives in one vertical pod: a power button, two USB-C ports, two USB-A ports and a 3.5 mm stereo audio output. I kept everything lined up so it belongs to the rest of the case.</p>
+      <p>Two USB-C ports need <b>two independent supported Type-E motherboard hosts</b>; use the one-C fascia if your board has only one. The USB-A pair needs one supported 19-pin header. Audio passes through from a rear stereo output—not HD_AUDIO or a headset microphone input.</p>
+      <p>The passive cables and header adapters need complete-chain testing. It’s standard 5 V host operation only: <b>no Thunderbolt, USB4, DisplayPort Alt Mode or USB Power Delivery claim</b>, and no whole-chain USB-IF certification. The <a class="ul" href="downloads/IO-ASSEMBLY.md">I/O notes</a> cover the selected parts, plug-reversal, hot-plug and current checks.</p>
+
+      <h2 id="pcc4"><i>4</i>How it’s made</h2>
+      <p>Here’s the fun part. The full documented arrangement uses <b>19 main sheet-metal pieces from 18 cut designs</b>, including the optional side-fan bridge and GPU support. Small shims, the gasket, purchased hardware and electronics are additional. Alternative fascias replace the main fascia; they aren’t extra panels to install.</p>
+
+      <figure class="fig plate"><img src="assets/pc-case-05-flat-parts.webp" alt="The flat sheet metal parts before bending" loading="lazy"></figure>
+      <p class="cap"><b>Fig. 5</b><span>Actual developed cut geometry at one common scale. Illustration only—not a cutting nest. Alternative fascias, coupons, shims and gasket are omitted.</span></p>
+
+      <ol style="margin:14px 0 14px 20px;padding-left:1.2em;color:#D4C3AA">
+        <li><b>Cut.</b> Start with the developed DXFs and qualify your shop’s process using the supplied coupons. Materials are 1.5 mm 5052-H32 aluminium sides, 1 mm mild-steel wrap/rear/tray and most brackets, 1 mm aluminium fascia, and 3 mm mild-steel nutstrip and GPU support. Follow the part schedule.</li>
+        <li><b>Bend.</b> Follow the drawings and sequence, calibrate bend allowances and check tool access. The wrap blank is about 1,238 mm long and includes formed offsets: don’t assume any small press brake will do.</li>
+        <li><b>Clean.</b> Deburr before bending and check again afterwards. Take the sharp edges off with a file or abrasive paper. Your fingers—and the cables—will thank you.</li>
+        <li><b>Assemble.</b> Trial-fit with screws, nuts, rivet nuts and standoffs—mainly M3 chassis joints, plus the component-specific fixings in the BOM. No welding. Install only the standoffs your motherboard needs.</li>
+        <li><b>Finish.</b> After checking fit, disassemble for finishing, then reassemble. Brush it or powder coat it; bare steel needs corrosion protection. Mask bonding faces and specified connector seats. Coating thickness matters.</li>
+      </ol>
+
+      <figure class="fig plate"><img src="assets/pc-case-06-exploded-view.webp" alt="Exploded view of the case parts" loading="lazy"></figure>
+      <p class="cap"><b>Fig. 6</b><span>Assembly overview, not a disassembly sequence. PC components and some hardware are omitted for clarity; use the guide for the actual joints and order.</span></p>
+
+      <p>Follow the guide’s prototype checks before committing to a full build. A documented <b>0.4572 mm PCI setback discrepancy</b> needs gauging with real brackets, cards and slot covers. Digital checks don’t replace that—or the electrical, bonding, thermal and load tests.</p>
+
+      <h2 id="pcc5"><i>5</i>What fits inside</h2>
+      <p>These are design targets, not a guarantee that every combination will fit:</p>
+      <ul>
+        <li><b>Motherboard:</b> ATX up to 304.8 × 243.84 mm, microATX up to 243.84 × 243.84 mm, or Mini-ITX at 170 × 170 mm.</li>
+        <li><b>Graphics card:</b> up to 340 mm long, 150 mm projection and 65 mm thick, with a separate 35 mm connector-space allowance. Check the actual card and cable bend.</li>
+        <li><b>Power supply:</b> standard ATX, 150 × 86 mm cross-section and 140–180 mm depth, plus a 60 mm cable-space allowance.</li>
+        <li><b>CPU cooler:</b> 170 mm height target; verify the actual socket, RAM, motherboard and cooler combination.</li>
+        <li><b>Fans:</b> one 140 mm bottom fan and one 140 mm rear fan, plus an optional 120 mm side fan on its removable bridge.</li>
+        <li><b>Storage:</b> one 7 mm-thick 2.5-inch SSD.</li>
+      </ul>
+      <p>The main case outline is 302 W × 410 D × 520 H mm. Allow 306.8 W × 422 D × 520 H mm including the modelled screw heads and rear rail. E-ATX and radiators are not claimed configurations.</p>
+      <p>Please measure your parts before you cut anything. Metal is a lot less forgiving than a 3D print.</p>
+
+      <h2 id="pcc6"><i>6</i>What you get in the download</h2>
+      <ul>
+        <li><b>29 developed DXFs</b>, including the main cut designs, three alternative fascias, six process coupons and two ancillary designs for shims and a gasket.</li>
+        <li><b>STEP files</b> for the full assembly and the manufactured sheet parts.</li>
+        <li><b>Editable FreeCAD files</b> for the assembly and flat patterns, plus Python source tools.</li>
+        <li>A <b>41-page A3 drawing and build guide</b>, with dimensions, bends, fasteners and assembly steps.</li>
+        <li>Sheet-part and hardware bills of materials, purchasing references, I/O instructions and digital verification records.</li>
+        <li>The full <b>CERN-OHL-P v2</b> license and notices.</li>
+      </ul>
+      <p><b><a class="ul" href="downloads/M3-Capsule-DIY-kit.zip">Download the prototype files — ZIP, 11.4&nbsp;MB</a></b></p>
+      <p><a class="ul" href="downloads/M3-Capsule-drawings-and-build-guide.pdf">Read the build guide — PDF, 3.5&nbsp;MB</a> · <a class="ul" href="downloads/sheet-parts-bom.csv">Sheet-parts BOM</a> · <a class="ul" href="downloads/hardware-bom.csv">Hardware BOM</a></p>
+      <p>This is a free <b>unprototyped community design</b>, not a manufactured product or a safety-certified kit. The cut files still need your shop’s process qualification and the build needs physical testing.</p>
+
+      <h2 id="pcc7"><i>7</i>Make it your own</h2>
+      <p>Change the vent pattern. Make it taller. Paint it Plum Wine. That’s the point of sharing it.</p>
+      <p>Just remember that changing the material, thickness, size or hole pattern also changes bends, stiffness, clearances and cooling. A brass version, for example, needs its own engineering and validation—not just a material swap at the laser shop.</p>
+      <p>If you do build one, I’d genuinely love to see it. <a class="ul" href="mailto:hello@gimli.works">Send me a picture</a> and I might feature it here.</p>
+
+      <h2 id="pcc8"><i>8</i>License</h2>
+      <p>Shared under the <a class="ul" href="LICENSE.txt">CERN Open Hardware Licence Version 2 — Permissive</a>, <b>CERN-OHL-P-2.0</b>. Build it, change it, share it—even sell it—subject to the license, including retaining the required <a class="ul" href="NOTICE.md">notices</a>. Commercial use is allowed; the design comes without warranty. Referenced supplier material remains its owners’ property.</p>
+      <p class="small">Thanks for reading. Now go make some sparks—start with a test coupon.</p>
+    </div>
+  </div>
+
+</article>
 
 <article id="art-rubber-tapping-machine" class="wrap art" data-slug="rubber-tapping-machine">
   <a class="back" href="#/projects">← All projects</a>
