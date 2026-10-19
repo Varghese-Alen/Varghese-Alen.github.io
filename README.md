@@ -1,42 +1,51 @@
-# Alen Mammen Varghese: engineering notebook website
+# Alen Mammen Varghese — Engineering Notebook
 
-A personal site of build logs and short blogs. It is plain HTML, CSS and JavaScript, so there is nothing to install.
+Personal website of build logs, engineering design notes, and mechanical projects. Built with plain HTML, CSS, and JavaScript.
 
-## What is in this folder
+**Live site:** [varghese-alen.github.io](https://varghese-alen.github.io)
 
-| File or folder | What it is |
+---
+
+## Featured Projects
+
+- **Sheet Metal PC Case**: An unprototyped open-source DIY sheet metal computer chassis with 3D CAD models (FreeCAD, STEP), 29 cut DXFs, and a 41-page A3 build guide. [GitHub Repository](https://github.com/Varghese-Alen/sheet-metal-pc-case)
+- **Automatic Rubber-Tapping Machine**: Kinematics, structural finite-element simulation, and physical architecture for an autonomous tree-tapping mechanism.
+
+---
+
+## Repository Structure
+
+| File / Directory | Description |
 | --- | --- |
-| `index.html` | All the pages and their text: Home, Projects, Blogs, Contact, and the rubber-tapping write-up |
-| `styles.css` | All the styling. The colours and fonts are at the top, in `:root` |
-| `app.js` | The small bits of behaviour: page switching, the menu, the picture gallery, the contact box |
-| `assets/` | The pictures and the video, one file each |
-| `AGENTS.md` | Rules and past decisions for AI helpers (Antigravity reads this on its own) |
+| `index.html` | Semantic markup for Home, Projects, Blogs, Contact, and case studies |
+| `styles.css` | Minimal, Swiss dark-theme design with custom properties |
+| `app.js` | Client-side routing, navigation drawer, and interactive gallery controls |
+| `hero-rig.js` | Interactive 3D hero canvas simulation |
+| `assets/` | Optimized WebP images, vector graphics, and video media |
+| `downloads/` | Project specification sheets, BOMs, and build manuals |
 
-## See the site
+---
 
-Double click `index.html`. It opens in your browser. The fonts come from Google Fonts, so you need an internet connection to see them properly.
+## Local Development
 
-## Edit it with Antigravity
+Open `index.html` directly in any modern web browser or serve locally with a static web server:
 
-1. Open Antigravity.
-2. Choose **File, then Open Folder**, and pick this `alen-site` folder itself (not a folder above it).
-3. Ask the agent for a change in plain words. Good examples:
-   - "Add a new project called ... to the Projects page. Use the same card style as the rubber-tapping one."
-   - "Change the email address everywhere to ..."
-   - "Write my second blog post and add it to the Blogs page."
-4. Open `index.html` in your browser and refresh to check the result.
+```bash
+python3 -m http.server 8000
+```
 
-The agent will read `AGENTS.md` first, so it already knows your colours, fonts, writing style, and the things you have already decided against.
+---
 
-## Things you will want to change soon
+## Connect
 
-- **Your email address.** It is still the placeholder `hello@example.com`. Search for it in `index.html` (about three places in links, plus `data-email` in the Contact section).
-- **Blogs.** The page is empty on purpose. There is no blog post template yet, so ask the agent to make one.
+- **Website**: [varghese-alen.github.io](https://varghese-alen.github.io)
+- **Client & Studio Work**: [gimli.works](https://gimli.works)
+- **GitHub**: [github.com/Varghese-Alen](https://github.com/Varghese-Alen)
+- **LinkedIn**: [linkedin.com/in/alen-mammen-varghese](https://www.linkedin.com/in/alen-mammen-varghese/)
+- **X**: [x.com/alen_m_varghese](https://x.com/alen_m_varghese)
 
-## Put it online (free options)
+---
 
-Any of these will host a folder like this: Netlify (drag the folder onto their Drop page), Cloudflare Pages, GitHub Pages, or Vercel. Upload the whole folder, with `index.html` at the top level.
+## License
 
-## Keep a safety net
-
-Before big changes, copy the folder, or run `git init` and `git commit` inside it, so you can always go back.
+Site content and design © 2026 Alen Mammen Varghese. Hardware designs licensed under CERN-OHL-P-2.0.
