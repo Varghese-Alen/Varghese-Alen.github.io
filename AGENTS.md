@@ -31,7 +31,7 @@ Keep it quiet: no extra decoration, no new divider lines, motion must respect `p
 ## How to add things
 - New project: copy the card in `#projects .pgrid` (picture, `<time>`, title, `data-tags="eng"` or `"prod"`), copy the structure of `<article data-slug="rubber-tapping-machine">`, add a `{k,d,t,kind:'Log',h:'#/project/<slug>'}` entry to `REL` in `app.js`. The home rows and menu preview update by themselves.
 - New blog post: add a `kind:'Blog'` entry to `REL`. There is no blog template yet, so create one that matches the project page style.
-- Email address: `data-email` on `.ct-in` in the Contact section, and the `mailto:` links in the footer. It is still the placeholder `hello@example.com`.
+- Email address: `data-email` on `.ct-in` in the Contact section, and the `mailto:` links in the footer (`varghesemalen@gmail.com`).
 - New page: add `<main class="page" data-page="name">`, add the name to the `known` list in `route()`, and add a link in the menu `nav`.
 
 ## Before you say you are done
